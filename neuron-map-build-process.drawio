@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Neuron Map Build Process" id="neuron-map-1">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="&lt;b&gt;Neuron Map Study App - Build Process&lt;/b&gt;&lt;br&gt;root folder: neuron-map-app/" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="300" y="10" width="400" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m1" value="&lt;b&gt;1. Core data model&lt;/b&gt;&lt;br&gt;Neuron, Synapse, Board types&lt;br&gt;&lt;i&gt;src/core/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="200" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m2" value="&lt;b&gt;2. Storage&lt;/b&gt;&lt;br&gt;IndexedDB / DB API, import-export JSON&lt;br&gt;&lt;i&gt;src/storage/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="200" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m3" value="&lt;b&gt;3. Note editor&lt;/b&gt;&lt;br&gt;Rich text, tags, attach to neuron&lt;br&gt;&lt;i&gt;src/notes/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="200" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m4" value="&lt;b&gt;4. Neuron board&lt;/b&gt;&lt;br&gt;Canvas: drag, zoom, link neurons&lt;br&gt;&lt;i&gt;src/board/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="760" y="80" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m5" value="&lt;b&gt;5. Study mode&lt;/b&gt;&lt;br&gt;Review path, spaced repetition, quiz&lt;br&gt;&lt;i&gt;src/study/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="760" y="260" width="200" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m6" value="&lt;b&gt;6. draw.io export&lt;/b&gt;&lt;br&gt;Board to mxGraph XML script&lt;br&gt;&lt;i&gt;src/export-drawio/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="200" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m7" value="&lt;b&gt;7. UI shell&lt;/b&gt;&lt;br&gt;Layout, routing, search, settings&lt;br&gt;&lt;i&gt;src/ui/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="200" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m8" value="&lt;b&gt;8. Test and deploy&lt;/b&gt;&lt;br&gt;Unit/e2e tests, hosting&lt;br&gt;&lt;i&gt;tests/ and deploy/&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="endArrow=classic;html=1;" edge="1" parent="1" source="m1" target="m2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=classic;html=1;" edge="1" parent="1" source="m2" target="m3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=classic;html=1;" edge="1" parent="1" source="m3" target="m4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=classic;html=1;" edge="1" parent="1" source="m4" target="m5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="endArrow=classic;html=1;" edge="1" parent="1" source="m5" target="m6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="endArrow=classic;html=1;" edge="1" parent="1" source="m6" target="m7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="endArrow=classic;html=1;" edge="1" parent="1" source="m7" target="m8"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="note" value="Shared helpers: src/shared/ (utils, constants, i18n)&lt;br&gt;Docs: docs/ (architecture, diagrams/*.drawio)" style="text;html=1;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="390" width="400" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
