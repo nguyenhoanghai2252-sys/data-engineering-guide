@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="2">
   <diagram name="Overview" id="3Mj44t-8mx5W0VqTq6bk">
     <mxGraphModel dx="1468" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -80,6 +80,77 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="map-5" edge="1" parent="1" source="de-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontColor=#92400e;fontStyle=1;fontSize=11;" target="nn-5" value="Deploys Inference">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4BjvED8CjTr8c4luntUR" name="Programming skills &amp; Core foundations">
+    <mxGraphModel dx="1747" dy="778" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#020617;fontColor=#ffffff;fontSize=18;fontStyle=1;" value="Deep Dive: 1. Programming &amp; Core Foundations → Neural Network Tensor Pipeline" vertex="1">
+          <mxGeometry height="55" width="1320" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-foundations" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=14;fontStyle=1;startSize=38;" value="1. PROGRAMMING &amp; CORE FOUNDATIONS (roadmap.sh/data-engineer)" vertex="1">
+          <mxGeometry height="820" width="560" x="60" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="f-py" parent="lane-foundations" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;" value="&lt;b&gt;1.1 Python &amp;amp; Data Structures&lt;/b&gt;&lt;br&gt;• OOP Classes, Generators (yield), Iterators, Type Hints&lt;br&gt;• Memory Management, Multiprocessing &amp;amp; Async I/O&lt;br&gt;• Core Libraries: NumPy, Pandas, Polars, PyArrow" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f-sql" parent="lane-foundations" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;" value="&lt;b&gt;1.2 SQL &amp;amp; Relational Querying&lt;/b&gt;&lt;br&gt;• Joins, CTEs, Aggregations &amp;amp; Window Functions (LAG/LEAD)&lt;br&gt;• Query Execution Plans, Indexing &amp;amp; Partition Pruning&lt;br&gt;• Deterministic Train / Validation / Test Splitting" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="f-linux" parent="lane-foundations" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;" value="&lt;b&gt;1.3 Linux CLI, Bash &amp;amp; File Systems&lt;/b&gt;&lt;br&gt;• Text Streams &amp;amp; Parsing: grep, awk, sed, jq, cut&lt;br&gt;• File Compression, Sharding, Permissions &amp;amp; Cron Jobs&lt;br&gt;• Disk I/O Throughput, POSIX Paths &amp;amp; Remote SSH" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="f-git" parent="lane-foundations" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=12;" value="&lt;b&gt;1.4 Git &amp;amp; Reproducible Environments&lt;/b&gt;&lt;br&gt;• Branching Workflows, Code Reviews &amp;amp; .gitignore Rules&lt;br&gt;• Dependency Locking: uv, Poetry, pip, Conda&lt;br&gt;• Environment Variables, Config Files (YAML) &amp;amp; Logging" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="lf-1" edge="1" parent="lane-foundations" source="f-py" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;" target="f-sql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lf-2" edge="1" parent="lane-foundations" source="f-sql" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;" target="f-linux">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lf-3" edge="1" parent="lane-foundations" source="f-linux" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;" target="f-git">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-tensor" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontColor=#14532d;fontSize=14;fontStyle=1;startSize=38;" value="A. NEURAL NETWORK TENSOR INGESTION &amp; PREPROCESSING" vertex="1">
+          <mxGeometry height="820" width="560" x="820" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="t-py" parent="lane-tensor" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;" value="&lt;b&gt;A1. Tensor Construction &amp;amp; Batch Streaming&lt;/b&gt;&lt;br&gt;• Zero-copy NumPy ndarray → PyTorch Tensor conversion&lt;br&gt;• Custom torch.utils.data.Dataset &amp;amp; IterableDataset&lt;br&gt;• Dynamic Padding, Collate Functions &amp;amp; Mini-Batching" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-sql" parent="lane-tensor" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;" value="&lt;b&gt;A2. Tabular Feature Matrix Engineering&lt;/b&gt;&lt;br&gt;• Point-in-time feature joins (preventing data leakage)&lt;br&gt;• Categorical encoding (embeddings) &amp;amp; numerical scaling&lt;br&gt;• Server-side cursor streaming into training loops" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="t-linux" parent="lane-tensor" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;" value="&lt;b&gt;A3. High-Throughput Disk-to-GPU I/O&lt;/b&gt;&lt;br&gt;• Sharding raw corpora into Parquet / TFRecord / WebDataset&lt;br&gt;• Automated CLI deduplication &amp;amp; corruption filtering&lt;br&gt;• Multi-worker prefetching (num_workers &amp;amp; pin_memory)" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="t-git" parent="lane-tensor" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=12;" value="&lt;b&gt;A4. Deterministic Preprocessing &amp;amp; Skew Prevention&lt;/b&gt;&lt;br&gt;• Versioned Tokenizer vocabularies &amp;amp; normalization rules&lt;br&gt;• Reproducible RNG seeds across NumPy, Python &amp;amp; PyTorch&lt;br&gt;• Identical transformation code in training vs. inference" vertex="1">
+          <mxGeometry height="130" width="490" x="35" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-1" edge="1" parent="lane-tensor" source="t-py" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;" target="t-sql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-2" edge="1" parent="lane-tensor" source="t-sql" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;" target="t-linux">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rt-3" edge="1" parent="lane-tensor" source="t-linux" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;" target="t-git">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bridge-1" edge="1" parent="1" source="f-py" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2.5;fontColor=#92400e;fontStyle=1;fontSize=11;" target="t-py" value="Yields Tensor Batches">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bridge-2" edge="1" parent="1" source="f-sql" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2.5;fontColor=#92400e;fontStyle=1;fontSize=11;" target="t-sql" value="Extracts Clean Features">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bridge-3" edge="1" parent="1" source="f-linux" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2.5;fontColor=#92400e;fontStyle=1;fontSize=11;" target="t-linux" value="Shards &amp; Prefetches I/O">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bridge-4" edge="1" parent="1" source="f-git" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2.5;fontColor=#92400e;fontStyle=1;fontSize=11;" target="t-git" value="Locks Pipeline Logic">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
