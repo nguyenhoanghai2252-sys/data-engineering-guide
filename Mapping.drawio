@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Overview" id="3Mj44t-8mx5W0VqTq6bk">
+    <mxGraphModel dx="1468" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#0f172a;fontColor=#ffffff;fontSize=18;fontStyle=1;" value="Beginner Guide: Neural Network Mapping on roadmap.sh/data-engineer" vertex="1">
+          <mxGeometry height="50" width="1240" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-de" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=14;fontStyle=1;startSize=36;" value="DATA ENGINEER ROADMAP LAYERS (roadmap.sh/data-engineer)" vertex="1">
+          <mxGeometry height="790" width="520" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="de-1" parent="lane-de" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=13;" value="&lt;b&gt;1. Programming &amp;amp; Core Foundations&lt;/b&gt;&lt;br&gt;Python • SQL • Linux CLI • Git" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="de-2" parent="lane-de" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=13;" value="&lt;b&gt;2. Databases &amp;amp; Data Warehousing&lt;/b&gt;&lt;br&gt;PostgreSQL • Snowflake • BigQuery • Data Modeling" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="de-3" parent="lane-de" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=13;" value="&lt;b&gt;3. Big Data &amp;amp; Stream Processing&lt;/b&gt;&lt;br&gt;Apache Spark • Apache Kafka • Apache Flink" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="de-4" parent="lane-de" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=13;" value="&lt;b&gt;4. Workflow Orchestration &amp;amp; Transformation&lt;/b&gt;&lt;br&gt;Apache Airflow • dbt • Dagster • Data Quality" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="de-5" parent="lane-de" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e3a8a;fontSize=13;" value="&lt;b&gt;5. Cloud Infrastructure &amp;amp; Containers&lt;/b&gt;&lt;br&gt;Docker • Kubernetes • AWS / GCP / Azure • CI/CD" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="de-f1" edge="1" parent="lane-de" source="de-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;" target="de-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de-f2" edge="1" parent="lane-de" source="de-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;" target="de-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de-f3" edge="1" parent="lane-de" source="de-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;" target="de-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de-f4" edge="1" parent="lane-de" source="de-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2563eb;strokeWidth=2;" target="de-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-nn" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontColor=#14532d;fontSize=14;fontStyle=1;startSize=36;" value="NEURAL NETWORK ARCHITECTURE &amp; PIPELINE MAPPING" vertex="1">
+          <mxGeometry height="790" width="520" x="780" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-1" parent="lane-nn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=13;" value="&lt;b&gt;A. Tensor Ingestion &amp;amp; Preprocessing&lt;/b&gt;&lt;br&gt;NumPy Arrays • PyTorch DataLoaders • Tokenization" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-2" parent="lane-nn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=13;" value="&lt;b&gt;B. Feature Stores &amp;amp; Vector Databases&lt;/b&gt;&lt;br&gt;pgvector • Feast • Embedding Storage &amp;amp; Retrieval" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-3" parent="lane-nn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=13;" value="&lt;b&gt;C. Distributed Training &amp;amp; Stream Scoring&lt;/b&gt;&lt;br&gt;PyTorch DDP • Ray • Real-Time Event Inference" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-4" parent="lane-nn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=13;" value="&lt;b&gt;D. Automated Retraining &amp;amp; Experiment DAGs&lt;/b&gt;&lt;br&gt;Scheduled Feature Refresh • MLflow • Drift Triggers" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-5" parent="lane-nn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontSize=13;" value="&lt;b&gt;E. Neural Network Serving &amp;amp; Inference APIs&lt;/b&gt;&lt;br&gt;ONNX Runtime • TorchServe • NVIDIA Triton" vertex="1">
+          <mxGeometry height="90" width="440" x="40" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-f1" edge="1" parent="lane-nn" source="nn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;" target="nn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-f2" edge="1" parent="lane-nn" source="nn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;" target="nn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-f3" edge="1" parent="lane-nn" source="nn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;" target="nn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nn-f4" edge="1" parent="lane-nn" source="nn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#16a34a;strokeWidth=2;" target="nn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="map-1" edge="1" parent="1" source="de-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontColor=#92400e;fontStyle=1;fontSize=11;" target="nn-1" value="Feeds Tensors">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="map-2" edge="1" parent="1" source="de-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontColor=#92400e;fontStyle=1;fontSize=11;" target="nn-2" value="Stores Embeddings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="map-3" edge="1" parent="1" source="de-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontColor=#92400e;fontStyle=1;fontSize=11;" target="nn-3" value="Scales Data &amp; Streams">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="map-4" edge="1" parent="1" source="de-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontColor=#92400e;fontStyle=1;fontSize=11;" target="nn-4" value="Schedules Retraining">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="map-5" edge="1" parent="1" source="de-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d97706;strokeWidth=2;fontColor=#92400e;fontStyle=1;fontSize=11;" target="nn-5" value="Deploys Inference">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
